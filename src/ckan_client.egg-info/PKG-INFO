@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: ckan-client
+Version: 0.1.0
+Requires-Dist: requests>=2.31
+Provides-Extra: test
+Requires-Dist: requests-mock; extra == "test"
+Requires-Dist: pytest; extra == "test"

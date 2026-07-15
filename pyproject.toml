@@ -1,0 +1,11 @@
+[project]
+name = "ckan-client"
+version = "0.1.0"
+dependencies = ["requests>=2.31"]
+
+[project.optional-dependencies]
+test = ["requests-mock", "pytest"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
