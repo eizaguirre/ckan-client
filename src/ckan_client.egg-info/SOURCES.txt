@@ -1,0 +1,14 @@
+pyproject.toml
+src/ckan_client/__init__.py
+src/ckan_client/client.py
+src/ckan_client/exceptions.py
+src/ckan_client.egg-info/PKG-INFO
+src/ckan_client.egg-info/SOURCES.txt
+src/ckan_client.egg-info/dependency_links.txt
+src/ckan_client.egg-info/requires.txt
+src/ckan_client.egg-info/top_level.txt
+src/ckan_client/actions/__init__.py
+src/ckan_client/actions/datasets.py
+src/ckan_client/actions/resources.py
+tests/test_datasets.py
+tests/test_resources.py
