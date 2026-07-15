@@ -1,7 +1,9 @@
 import requests
 from .exceptions import CkanError, CkanActionError
+from ckan_client.actions.datasets import DatasetsMixin
+from ckan_client.actions.resources import ResourcesMixin
 
-class CkanClient:
+class CkanClient(DatasetsMixin, ResourcesMixin):
     def __init__(self, base_url: str, api_token: str, timeout: int = 30):
         self.base_url = base_url.rstrip("/")
         self.session = requests.Session()
