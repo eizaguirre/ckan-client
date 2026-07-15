@@ -10,6 +10,8 @@ class DatasetsMixin:
         # unlike package_update, which requires the full object.
         return self.call_action("package_patch", {"id": id, **kwargs})
 
-    def dataset_delete(self, id: str, purge: bool = False) -> dict:
-        action = "dataset_purge" if purge else "package_delete"
-        return self.call_action(action, {"id": id})
+    def dataset_delete(self, id: str) -> dict:
+        return self.call_action("package_delete", {"id": id})
+
+    def dataset_purge(self, id: str) -> dict:
+        return self.call_action("dataset_purge", {"id": id})
